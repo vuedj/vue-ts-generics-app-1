@@ -1,0 +1,9 @@
+{
+    "endOfLine": "lf",
+    "htmlWhitespaceSensitivity": "ignore",
+    "plugins": ["prettier-plugin-sort-json"],
+    "semi": false,
+    "singleAttributePerLine": true,
+    "singleQuote": true,
+    "tabWidth": 4
+}
