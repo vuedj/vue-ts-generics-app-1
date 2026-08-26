@@ -5,7 +5,7 @@ defineProps<{
 }>()
 
 const emit = defineEmits<{
-    select: [item: T]
+    'emit-to-parent': [item: T]
 }>()
 </script>
 
@@ -26,7 +26,7 @@ const emit = defineEmits<{
                 v-for="item in items"
                 :key="item.id"
                 class="p-4 rounded-lg border border-gray-100 hover:border-blue-400 hover:bg-blue-50 cursor-pointer transition-all shadow-sm"
-                @click="emit('select', item)"
+                @click="emit('emit-to-parent', item)"
             >
                 <slot
                     name="item"

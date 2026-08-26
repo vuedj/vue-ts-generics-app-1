@@ -37,7 +37,7 @@ function handleProductSelect(product: Product) {
             <GenericList
                 title="Team Members"
                 :items="users"
-                @select="handleUserSelect"
+                @emit-to-parent="handleUserSelect"
             >
                 <template #item="{ item }">
                     <div class="flex justify-between items-center">
@@ -56,7 +56,7 @@ function handleProductSelect(product: Product) {
             <GenericList
                 title="Hardware Catalog"
                 :items="products"
-                @select="handleProductSelect"
+                @emit-to-parent="handleProductSelect"
             >
                 <template #item="{ item }">
                     <div class="flex flex-col">
